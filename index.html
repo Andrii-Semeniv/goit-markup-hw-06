@@ -505,14 +505,19 @@
       <textarea name="comment" id="modal-comment" class="modal-form-item modal-textarea" placeholder="Введіть текст"></textarea>
 </div>
 
-      <p class="modal-submit-field">
-        <input type="checkbox" >
-  <svg width="16" height="15">
-    <use href="./images/icons.svg#icon-form-check"></use>
-  </svg>
-  Погоджуюся з розсилкою та приймаю
-  <a href="" class="link modal-form-link"> Умови договору</a>
-</p>
+      <div class="modal-submit-field">
+        <input class="modal-submit " type="checkbox" name="modal-submit" id="modal-submit" >
+        <label for="modal-submit" class="modal-submit-label">
+            <svg  class="modal-icon" width="16" height="15">
+            <use href="./images/icons.svg#icon-form-check"></use>
+            </svg>
+          
+               Погоджуюся з розсилкою та приймаю
+          <a href="" class="link modal-form-link"> Умови договору</a>
+        </label>
+</div>
+
+
 <button type="submit" class="modal-form-btn">Відправити</button>
     </form>
       
