@@ -875,14 +875,14 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-}
-.modal-icon {
   position: relative;
+}
+.modal-icon,
+.modal-icon-focus {
+  position: absolute;
   left: 0px;
   top: 50%;
-}
-.modal-submit {
-  position: absolute;
+  transform: translateY(-50%);
 }
 
 .modal-form-link {
