@@ -579,6 +579,8 @@ img {
   color: var(--second-color);
 }
 .footer-form-email {
+  padding-left: 15px;
+
   width: 358px;
   height: 50px;
 
@@ -586,7 +588,6 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--background-color-second);
-  padding-left: 15px;
   color: var(--second-color);
 
   transition: border-color var(--animation);
@@ -802,6 +803,10 @@ img {
 .modal-btn:hover > .backdrop-icon {
   fill: var(--btn-background-color);
 }
+.modal-btn:focus > .backdrop-icon {
+  fill: var(--btn-background-color);
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -820,6 +825,10 @@ img {
 .modal-field {
   margin-bottom: 10px;
 }
+.modal-field-comment {
+  margin-bottom: 20px;
+}
+
 .modal-form-item {
   padding-left: 42px;
 
@@ -830,6 +839,13 @@ img {
   outline: transparent;
   transition: border var(--animation);
 }
+.modal-field label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--second-text-color);
+}
+
 .modal-form-item:focus {
   border: 1px solid var(--link-color);
   border-radius: 4px;
@@ -857,7 +873,6 @@ img {
 
 .modal-textarea {
   padding: 12px 16px;
-  margin-bottom: 20px;
   margin-top: 4px;
 
   resize: none;
@@ -897,6 +912,10 @@ img {
 .modal-submit:checked + .modal-submit-label > .modal-icon {
   fill: transparent;
 }
+.modal-submit:focus + .modal-submit-label > .modal-icon {
+  fill: var(--link-color);
+}
+
 .modal-submit:checked + .modal-submit-label .modal-icon-focus {
   fill: var(--second-color);
   background-color: var(--btn-background-color);
